@@ -1,0 +1,28 @@
+input[name="switch"] {
+    display: none;
+  }
+  
+.container{
+    height: 20vh;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* mobile */
+@media screen and (max-width: 500px){
+    .boxes {
+        display: none;
+      }
+
+    input[name="switch"]:checked ~ .boxes {
+        display: block;
+        background: burlywood;
+      }
+
+    .switch_label{
+        padding: 0 0 0 50%;
+    }   
+}
