@@ -42,12 +42,7 @@ return (
         <section className={style.feature}>
             <div>
                 <h2>feature</h2>
-                <span className={style.arrowbtn}>
-                    <Link to="/aboutus">
-                        about us
-                        <img src={arrow} alt="arrowAboutUs"/>
-                    </Link>
-                </span>
+                <ArrowBtn path='aboutus' content='about us'/>
             </div>
             <div className={style.cards}>
                 <div className={style.proj_sol}>
