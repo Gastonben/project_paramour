@@ -1,0 +1,164 @@
+.header,
+.welcome,
+.about_us,
+.feature,
+.feature > div,
+.cards,
+.foot{
+    display: flex;
+}
+
+.header > div,
+.welcome,
+.about_us > div,
+.feature,
+.foot{
+    margin: 0 18px;
+}
+
+.arrowbtn,
+.arrowbtn > a{
+    color:white;
+    background: black;
+    padding: 10px;
+    
+}
+
+/* first-sec */
+.header{
+    background-image: url('../../assets/home/mobile/image-hero-paramour.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.header > div {
+    margin: 0 15px;
+    text-align:left;
+}
+
+.header > div > h1{
+    font-size: 3.5rem;
+    padding: 0 50% 0 0;
+}
+
+.header > div > p{
+    margin: 15px 0;
+    font-size: 1.3rem;
+}
+
+/* first-sec */
+/* <-----------------------> */
+/* second-sec */
+.welcome{
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+.welcome > h2{
+    font-size: 3rem;
+    padding: 0 30% 0 0;
+
+}
+
+.welcome > p{
+    margin: 20px 0;
+}
+/* second-sec */
+/* <-----------------------> */
+/* third-sec */
+.about_us{
+    height: 100vh;
+    background-image: url('../../assets/home/mobile/image-small-team.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about_us > div > h2{
+    margin: 0 0 15px 0;
+    font-size: 3rem;
+    padding: 0 40% 0 0;
+}
+/* third-sec */
+/* <-----------------------> */
+/* four-sec/feature-sec */
+.feature{
+    /* height: 150vh; */
+    flex-direction: column;
+}
+
+.feature > :first-child{
+    height: 15vh;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+/* four-sec/feature-sec */
+/* <-----------------------> */
+/* four-sec/cards-sec */
+.cards{
+    flex-wrap: wrap;
+}
+
+.cards > *{
+    flex: 1 1 100%;
+}
+.proj_sol,
+.proj_tower,
+.proj_proto{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px 0 0 0;
+}
+
+.proj_sol{
+    background-image: url('../../assets/portfolio/desktop/image-del-sol.jpg');
+}
+
+.proj_tower{
+    background-image: url('../../assets/portfolio/desktop/image-228b.jpg');
+}
+
+.proj_proto{
+    background-image: url('../../assets/portfolio/desktop/image-prototype.jpg');
+}
+/* four-sec/cards-sec */
+/* <-----------------------> */
+/* footer */
+.foot{
+    flex-wrap: wrap;
+    align-items: center;
+    height: 20vh;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+}
+
+.foot > :first-child{
+    background-color: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.foot > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    height: 100%;
+    width: 60%;
+}
+
+.foot > div:nth-child(2) > a{
+    color: white;
+    padding: 10px; 
+}
+.foot > span {
+    position: absolute;
+    right: 0;
+}
